@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Observable, Observer } from 'rxjs';
-
-import { NzSafeAny } from 'ng-zorro-antd/core/types';
 
 @Component({
   selector: 'app-sign-up',
@@ -19,7 +16,23 @@ export class SignUpComponent {
       lastName: ['', [Validators.required]],
       email: ['', [Validators.required]],
       mobile: ['', [Validators.required]],
+      aadharNo: ['', [Validators.required]],
+      panNo: ['', [Validators.required]],
+      gstNo: ['', [Validators.required]],
+      userType: ['', [Validators.required]],
+      shopUniqueNo: ['', [Validators.required]],
+      registrationId: ['', [Validators.required]],
+      dob: ['', [Validators.required]],
+      gender: ['', [Validators.required]],
       password: ['', [Validators.required]],
+
+      line1: ['', [Validators.required]],
+      line2: ['', [Validators.required]],
+      landMark: ['', [Validators.required]],
+      pinCode: ['', [Validators.required]],
+      country: ['', [Validators.required]],
+      city: ['', [Validators.required]],
+      regionCode: ['', [Validators.required]],
     });
   }
 }
